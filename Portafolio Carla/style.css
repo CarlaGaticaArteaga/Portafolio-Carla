@@ -1,0 +1,727 @@
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #c0bcbf;
+   --cor-de-link: #d652aa;
+      }
+  
+
+body {
+    box-sizing: border-box;
+    background-color: #c0bcbf; 
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    overflow-x: hidden; 
+    /* Esconde barra de rolagem horizontal */
+}
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#a71d84;
+    font-weight: bold;
+    /*Letra negrita */    
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+    width: 97%;
+    display: flex;
+    justify-content:center;
+     /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */;
+     }
+
+.menu__header {
+    width: 95%;
+    /* Ocupa todo el ancho disponible*/
+    max-width: 70%;
+    /* Ancho máximo permitido */
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    /* Alinea los elementos del encabezado en los extremos */
+    align-items: center;
+    /* Centra verticalmente los elementos del encabezado *//* Añade espacio interno a los lados del encabezado */
+    background: #c0bcbf;
+    /* Color de fondo del encabezado */
+    margin-top: 5px;
+    /* Elimina el margen superior */
+    padding: 0 15px;
+    /* Añade espacio interno a los lados del encabezado */
+    /* Centra y distribuye el espacio equitativamente */
+    margin: 0 20px;
+    /* Centra el encabezado horizontalmente */
+    }
+
+/* Estilo para el logo en el encabezado */
+.menu__logo {
+    width: 80px;
+    /* Tamaño del logo */
+    height: 50px;
+    /* Mantiene la proporción del logo */
+    margin-right: 15px;
+    /* Margen derecho para separación */
+}
+
+.menu__title {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bold; 
+    color: #a71d84;
+    }
+
+/* Estilo para el icono de menú */
+.menu__toggle {
+    display: none;
+    /* Oculta el icono de menú */
+    cursor: pointer;
+    background-color: #c0bcbf
+    /* Cambia el cursor al pasar por encima */
+}
+
+.menu__nav {
+    display: block;
+    /* Mostrar el menú en pantallas grandes por defecto */
+}
+
+/* Estilo para la lista del menú */
+.menu__list {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los elementos de la lista del menú */
+    margin-top: 15px;
+    /* Margen superior para separación */
+    font-size: 15px;
+    font-size: medium;
+    list-style-type: none;
+    background-color: #c0bcbf;
+}
+
+/* Estilo para los elementos de la lista del menú */
+.menu__list__item {
+    margin-right: 20px;
+}
+
+/* Estilo para el elemento de contacto en la lista del menú */
+.menu__list__item-contacto {
+    margin-left: auto;
+    /* Empuja el elemento de contacto hacia la derecha tanto como sea posible */
+    font-weight: bold;
+   }
+
+/* *Sección Título */
+.title {
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    font-weight: bold;
+       }
+
+.title__div {
+    width: 98%;
+    /* Ancho máximo permitido */
+    max-width: 1180px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c0bcbf;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.title__profile {
+    order: 2;
+    /* Cambia el orden del elemento */
+    width: 370px;
+    /* Ancho de la imagen del perfil */
+    height: 370px;
+    /* Altura automática manteniendo la proporción */
+    margin-left: 20px;
+}
+
+.title__container {
+    order: 1;
+    /* Cambia el orden del elemento */
+    flex: 1;
+    /* El contenido ocupará el espacio restante */
+    background: #c0bcbf;
+    text-align: center;
+}
+
+.title__bio {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.title__subsection {
+    font-size: 25px;
+    margin-bottom: 10px;
+    /* Margen inferior para separación */
+    font-weight: normal;
+    text-align: justify;
+}
+
+.title__network {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.title__network__item a {
+    text-decoration: none;
+    color: #0c0209;  ; /* Color del texto */
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: medium;
+}
+
+/* *Sección Sobre mí */
+.about {
+    background: #c0bcbf;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente en el viewport */
+    align-items: center;
+    /* Centra verticalmente en el viewport */
+    width: 95%;
+    /* Ocupa todo el ancho disponible del viewport */
+    }
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    /* Cambia a disposición en columna */
+    justify-content: center;
+    align-items: center;
+    /* Alinea los elementos a la izquierda */
+    width: 100%;
+    /* Ancho máximo permitido */
+    max-width: 1180px;
+    height: 255px;
+    background: #c0bcbf;
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    color: #a71d84;  
+}
+
+.about__paragraph {
+    margin-bottom: 5px;
+    text-align: center;
+    /* Aplica justificación al texto */
+    width: 100%;
+}
+
+/* *Sección Skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Cambia la disposición a columna */
+    align-items: center;
+    /* Centra verticalmente en el viewport */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
+    background-color: #c0bcbf;
+    height: 244px; /* Usar altura completa del viewport */
+    margin-top: 80px;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Centra verticalmente en el viewport */
+    align-items: center;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 1180px;
+    /* Ancho máximo permitido */
+    height: 244px;
+    /* Usar altura completa del viewport */
+    margin-top: 5px;
+    background: #a71d84;
+}
+
+.skills__title {
+    color: #a71d84;  
+    background-color: #c0bcbf;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+    margin-top: 15px;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: space-around;
+    /* Distribuye los elementos con espacio proporcional */
+    align-items: center;
+    /* Centra verticalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en varias líneas */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 1180px; /* Ancho máximo permitido */
+}
+
+.skills__box {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Alinea los elementos al final */
+    align-items: center;
+    /* Alinea los elementos a la izquierda */
+    width: 190px;
+    height: 174px;
+    margin-bottom: 10px;
+    color: #080106;
+  }
+
+.skills__img {
+    width: 48px;
+    height: 48px;
+}
+
+.skills__name {
+    margin-top: auto;
+    /* Mueve el nombre hacia la parte inferior */
+    background-color: #c0bcbf;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* *Sección Hobbies */
+.hobbies {
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a columna */
+    align-items: center;
+    /* Centra verticalmente en el viewport */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
+    background-color: #c0bcbf;
+    height: 244px; /* Usar altura completa del viewport */
+    margin-top: 10px;
+}
+
+.hobbies__container {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Centra verticalmente en el viewport */
+    align-items: center;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 100%;
+    /* Ancho máximo permitido */
+    height: 244px;
+    /* Usar altura completa del viewport */
+    margin-top: 10px;
+}
+
+.hobbies__title {
+    color: #a71d84;
+    background-color: #c0bcbf;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+    margin-top: 10px;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: space-around;
+    /* Distribuye los elementos con espacio proporcional */
+    align-items: center;
+    /* Centra verticalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en varias líneas */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 1180px; /* Ancho máximo permitido */
+}
+
+.hobbies__box {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Alinea los elementos al final */
+    align-items: center;
+    /* Alinea los elementos a la izquierda */
+    width: 176px;
+    height: 174px;
+    margin-bottom: 10px;
+    color: #080106;
+    }
+
+.hobbies__img {
+    width: 48px;
+    height: 48px;
+}
+
+.hobbies__name {
+    margin-top: auto;
+    /* Mueve el nombre hacia la parte inferior */
+    background-color: #c0bcbf;
+    justify-content: center;
+    font-weight: bold;
+   }
+
+/* *Sección Formación Académica */
+.academic {
+    display: flex;
+    justify-content: center;
+      align-items: center;
+    /* Centra verticalmente en el viewport */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
+    background-color: #c0bcbf;
+    height: 244px; /* Usar altura completa del viewport */
+    margin-top: 5px;
+}
+
+.academic__container {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Centra verticalmente en el viewport */
+    align-items: center;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 1180px; 
+    /* Ancho máximo permitido */
+    height: 244px;
+    /* Usar altura completa del viewport */
+    margin-top: 25px;
+ }
+
+.academic__title {
+    background-color: #c0bcbf;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+    margin-top: 5px;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 1180px;
+    background-color: #c0bcbf;
+    height: 350px;
+    /* Usar altura completa del viewport */
+}
+
+.academic__courses__box {
+    width: 368px;
+    height: 290px;
+    background-color: #c0bcbf;
+    padding: 0;
+}
+
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Distribuye los elementos uniformemente */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+    width: 100%;
+    height: 286px;
+    padding: 0;
+}
+
+.academic__courses__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    width: 100%;
+    height: 150px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.academic__courses__item__img {
+    width: 192px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    align-items: flex-end;
+    /* Centra verticalmente la imagen */
+    background-color: #c0bcbf;
+  }
+
+.academic__courses__item__datos {
+    margin-top: 15px;
+    background-color:#0a0008;
+    justify-content: center;
+   }
+
+.academic__courses__item__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #080006;
+    justify-content: center;
+}
+
+.academic__courses__item__subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px;
+     /* Establece margen a cero para eliminar cualquier espacio adicional */   
+     justify-content: center;
+    
+}
+/* *Sección Experiencia Profesional */
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra horizontalmente */
+    /* Centra verticalmente en el viewport */
+    width: 100%;
+    flex-direction: column;
+    /* Ocupa todo el ancho disponible del viewport */
+    background-color: #c0bcbf;
+      }
+
+.experience__info-container {
+    flex: 1; /* El contenido ocupará el espacio restante */
+    background-color: #c0bcbf;
+    text-align: left;
+    width: 368px;
+    height: 112px;    
+}
+experience__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #a71d84
+   }
+
+.experience__text {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.experience__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos para los botones (repositorio y demo) */
+.experience__repo,
+.experience__demo {
+    font-size: 16px;
+    font-weight:normal;
+}
+
+.experience__botao--repo,
+.experience__botao--demo, 
+button {
+    width: 120px;
+    height: 51px;
+    padding: 12px 24px;
+    margin-right: 12px;
+    background-color: #c0bcbf;
+    color: var(--cor-de-link);
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* *Sección Contacto */
+section.formcontato {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Cambia la disposición a columna */
+    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+    background-color:#c0bcbf;
+    padding: 64px 32px; /* Ajusta el relleno interior */
+}
+
+.formcontato__contacto {
+    display: flex;
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Ancho máximo permitido */
+    max-width: 1180px;
+    margin-top: 24px; /* Espaciado superior */
+    height: 660px;
+    background-color:#c0bcbf;
+}
+
+.formcontato--box {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    max-width: 1180px;
+    height: 660px;
+    background-color:#c0bcbf;
+}
+
+.formcontato__img {
+    width: 464px;
+    height: 593px;
+    margin-right: 24px;
+}
+
+.formcontato__text {
+    flex: 1; /* El contenido ocupará el espacio restante */
+    background-color: #c0bcbf;
+    text-align:left;
+    width: 660px;
+    height: 596px;
+}
+
+.formcontato__title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.formcontato__subtext {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.formcontato__form {
+    margin-top: 32px;
+    
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 656px;
+    height: 56px;  
+    margin-bottom: 16px;
+    border: none;
+}
+
+.formcontato__textarea {
+    height: 133px;
+}
+
+.formcontato__botao {
+    width: 160px;
+    height: 51px;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #c0bcbf;
+    color: var(--cor-de-link);
+    border: none;
+    cursor: pointer;
+}
+
+/* Sección Footer */.footer {
+    height: 102px;
+    font-size: 16px;
+    font-weight: medium;
+    text-align: center;
+    background-color:#d652aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer__rodape {
+    /* Estilos adicionales para el contenido dentro del footer */
+    color: rgb(8, 1, 1); /* Color del texto */
+}
+
+/* *** Estilos para dispositivos con ancho máximo de 900px *** */
+@media screen and (max-width: 900px) {
+     /* Estilo para el icono de menú */
+    .menu__toggle {
+        margin-right: 20px;
+    }
+    /* Estilo para el menú de navegación */
+    .menu__nav {
+        display: none; /* Ocultar el menú principal por defecto en dispositivos pequeños */
+        width: 25%; /* Ocupar todo el ancho disponible */
+        position: absolute; /* Posicionar de manera absoluta */
+        top: 90px; /* Distancia desde la parte superior */
+        right: 0; /* Pegar al borde derecho */
+        background-color: #f8f9fa; /* Color de fondo */
+        padding: 20px 20px 0 20px; /* Espaciado interno */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+        z-index: 1; /* Asegurar que esté encima de otros elementos */
+    }
+    /* Estilo para la lista de elementos del menú */
+    .menu__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+        align-items: flex-start; /* Alinear los elementos a la izquierda */
+    }
+    .menu__list__item,
+    .menu__list__item__contato {
+        margin-bottom: 5px;
+        align-self: flex-start; /* Alinear cada elemento a la izquierda */
+        width: 100%; /* Ocupar todo el ancho disponible */
+        transition: background-color 0.3s ease; /* Transición para cambiar el color de fondo */
+        height: 15px;
+        padding: 8px; /* Ajustar el padding para aumentar el tamaño del área de clic */
+        height: auto; /* Ajustar la altura automáticamente según el contenido */
+    }
+    .menu__list__item:hover,
+    .menu__list__item__contato:hover {
+        background-color: #ddd; /* Cambiar color de fondo en hover */
+        border-radius: 5px;
+        
+    }
+    /* Mostrar el menú principal cuando tiene la clase 'show' */
+    .menu__nav.show {
+        display: block;
+    }
+}
